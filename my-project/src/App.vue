@@ -1,12 +1,12 @@
 <template>
-  <div id="app">
+    <div >
     <h1>Active Links</h1>
     <ul>
       <li><router-link to="/" exact>/</router-link></li>
       <li><router-link to="/about" exact>/ (exact match)</router-link></li>
     </ul>
       <router-view></router-view>
-  </div>
+    </div>
 </template>
 
 

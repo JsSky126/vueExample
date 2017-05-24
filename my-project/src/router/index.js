@@ -10,6 +10,6 @@ export default new Router({
     mode:'history',
     routes: [
         {path: '/',name: 'Home',component: Home},
-        {path: '/about',name: 'About',component: About}
+        {path: '/about/:id',name: 'About',component: About}
     ]
 })
