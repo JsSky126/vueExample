@@ -1,23 +1,21 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view></router-view>
+    <h1>Active Links</h1>
+    <ul>
+      <li><router-link to="/" exact>/</router-link></li>
+      <li><router-link to="/about" exact>/ (exact match)</router-link></li>
+    </ul>
+      <router-view></router-view>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'app'
-}
-</script>
+
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  a.router-link-active {
+    color: #f66;
+  }
+  li.router-link-active a {
+    color: #f66;
+  }
 </style>
